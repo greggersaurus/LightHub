@@ -6,7 +6,8 @@ The purpose of this project is to create a model for 3D printing a replacement
 
 # TODO
 
-1. Narrow the width of the center notch and perform next test print with reduced width center notch.
+1. Narrowed the width of the center notch by 0.35 mm (from 1.6 mm to 1.25 mm)
+    1. Need to perform next test print and see if notch is proper size to fit without filing
 2. Add details on printer and settings used for test print and details on results.
 
 # Design
@@ -26,4 +27,10 @@ The following are a rough outline of the steps used to model the part in Blender
 7. Select outer ring face and ctrl-f triangular faces then ctrl -f tris to quad.
 8. Select six faces at a time from top of outer ring and extrude to make arms for blocking light.
 9. Select vertices of raised arms to round off.
+
+# Exporting to STL
+
+Model was designed with units left in default state. If scale is left at 1.00 
+ when exporting to STL, this translates to each Blender unit being 1 mm and 
+ everything should print properly.
 
